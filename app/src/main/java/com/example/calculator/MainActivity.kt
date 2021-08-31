@@ -30,11 +30,13 @@ class MainActivity : AppCompatActivity() {
     var oper:Char = '+'
 
     fun Btnpress(num: Int) {
+        if(oper == '='){
+            
+        }
         Number = (Number*10)+num
         mainView.text = "$Number"
     }
     fun operate(str: Char){
-
         when(oper) {
             '+' -> Answer += Number
             '-' -> Answer -= Number
@@ -42,10 +44,11 @@ class MainActivity : AppCompatActivity() {
             '/' -> Answer /= Number
         }
         Number = 0
-        oper = str
+
         operView.text = "$oper"
         addView.text = "$Answer"
         mainView.text = """0"""
+        oper = str
 
     }
     fun btn0(view:View) {
@@ -89,7 +92,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun CE(view: View){
         mainView.text = "0"
-        addView.text = "0"
+        addView.text = ""
         operView.text=""""""
         Number = 0
         Answer = 0
@@ -107,9 +110,10 @@ class MainActivity : AppCompatActivity() {
         operate('/')
     }
     fun eql (view:View){
-        operate('+')
+        operate('=')
+
         mainView.text = Answer.toString()
-        addView.text = """0"""
+        addView.text = """"""
         operView.text = """"""
     }
 

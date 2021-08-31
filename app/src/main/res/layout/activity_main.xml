@@ -381,7 +381,6 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:background="#FFE625"
-        android:text="0"
         android:textAlignment="textEnd"
         android:textColor="#020202"
         android:textSize="16sp"
@@ -412,7 +411,8 @@
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="#020202"
-        android:textSize="16sp"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOper" />
