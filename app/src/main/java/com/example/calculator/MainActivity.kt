@@ -7,34 +7,44 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var mainView :TextView
+    lateinit var addView: TextView
+    lateinit var operView: TextView
+
+    var Number: Int = 0
+    var Answer: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        mainView = findViewById(R.id.textViewMain)
+        addView = findViewById(R.id.textViewAdd)
+        operView = findViewById(R.id.textViewOper)
+
+
     }
 
-    var mainView :TextView = findViewById(R.id.textViewMain)
-    var addView: TextView = findViewById(R.id.textViewAdd)
-    var operView: TextView = findViewById(R.id.textViewOper)
+
+
     var oper:Char = '+'
 
     fun Btnpress(num: Int) {
-        var text: Int = Integer.parseInt(mainView.text as String) * 10
-        text += num
-        mainView.text = "$num"
+        Number = (Number*10)+num
+        mainView.text = "$Number"
     }
     fun operate(str: Char){
-        var mainViewNum = Integer.parseInt(mainView.text as String)
-        var ansViewNum = Integer.parseInt(addView.text as String)
+
         when(oper) {
-            '+' -> ansViewNum += mainViewNum
-            '-' -> ansViewNum -= mainViewNum
-            '*' -> ansViewNum *= mainViewNum
-            '/' -> ansViewNum /= mainViewNum
+            '+' -> Answer += Number
+            '-' -> Answer -= Number
+            '*' -> Answer *= Number
+            '/' -> Answer /= Number
         }
+        Number = 0
         oper = str
         operView.text = "$oper"
-        addView.text = "$ansViewNum"
+        addView.text = "$Answer"
         mainView.text = """0"""
 
     }
@@ -80,6 +90,9 @@ class MainActivity : AppCompatActivity() {
     fun CE(view: View){
         mainView.text = "0"
         addView.text = "0"
+        operView.text=""""""
+        Number = 0
+        Answer = 0
     }
     fun add (view:View){
         operate('+')
@@ -95,8 +108,9 @@ class MainActivity : AppCompatActivity() {
     }
     fun eql (view:View){
         operate('+')
-        mainView.text = addView.text
+        mainView.text = Answer.toString()
         addView.text = """0"""
+        operView.text = """"""
     }
 
 
