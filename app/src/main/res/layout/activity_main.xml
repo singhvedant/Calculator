@@ -11,7 +11,7 @@
         android:id="@+id/button16"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:background="#4CAF50"
         android:onClick="eql"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -20,15 +20,18 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="="
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:background="#4CAF50"
         android:onClick="btn6"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -37,15 +40,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="6"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginTop="121dp"
+        android:background="#4CAF50"
         android:onClick="btn3"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -54,15 +62,19 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="3"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="382dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:background="#4CAF50"
         android:onClick="btn8"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -71,15 +83,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="8"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginTop="121dp"
+        android:background="#4CAF50"
         android:onClick="btn2"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -88,15 +105,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="2"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="382dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="131dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginEnd="20dp"
+        android:background="#4CAF50"
         android:onClick="mul"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -105,15 +127,22 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="x"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button12"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="121dp"
+        android:background="#4CAF50"
         android:onClick="btn1"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -122,15 +151,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="1"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="382dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="131dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginEnd="20dp"
+        android:background="#4CAF50"
         android:onClick="div"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -139,15 +173,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="/"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="531dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button16"
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginStart="20dp"
+        android:background="#4CAF50"
         android:onClick="btn4"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -156,15 +195,21 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="4"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="131dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="20dp"
+        android:background="#4CAF50"
         android:onClick="add"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -173,15 +218,21 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="+"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="382dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginStart="20dp"
+        android:background="#4CAF50"
         android:onClick="CE"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -190,15 +241,18 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="CE"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:background="#4CAF50"
         android:onClick="btn0"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -207,15 +261,18 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="0"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:background="#4CAF50"
         android:onClick="btn9"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -224,15 +281,19 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="9"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:background="#4CAF50"
         android:onClick="btn5"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -241,15 +302,20 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="5"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="131dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginEnd="20dp"
+        android:background="#4CAF50"
         android:onClick="sub"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -258,15 +324,21 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="-"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button14"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:background="#FFB700"
+        android:layout_marginStart="20dp"
+        android:background="#4CAF50"
         android:onClick="btn7"
         android:paddingStart="0dp"
         android:paddingLeft="0dp"
@@ -275,14 +347,19 @@
         android:paddingRight="0dp"
         android:paddingBottom="0dp"
         android:text="7"
+        android:textColor="#263238"
         app:iconPadding="0dp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:strokeColor="#000000"
+        app:strokeWidth="1sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="411dp"
         android:layout_height="56dp"
+        android:layout_marginTop="50dp"
         android:background="#0C9BBD"
         android:text="Calculator"
         android:textAlignment="center"
@@ -293,30 +370,51 @@
         android:typeface="sans"
         app:flow_horizontalAlign="center"
         app:flow_verticalAlign="center"
-        tools:layout_editor_absoluteY="50dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewAdd"
-        android:layout_width="371dp"
-        android:layout_height="37dp"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
         android:background="#FFE625"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="#020202"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewOper"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textViewOper"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:background="#FFE625"
+        android:textAlignment="textEnd"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewAdd" />
 
     <TextView
         android:id="@+id/textViewMain"
-        android:layout_width="371dp"
-        android:layout_height="38dp"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:background="#FFE625"
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="#020202"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="223dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOper" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

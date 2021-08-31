@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     var mainView :TextView = findViewById(R.id.textViewMain)
     var addView: TextView = findViewById(R.id.textViewAdd)
+    var operView: TextView = findViewById(R.id.textViewOper)
     var oper:Char = '+'
 
     fun Btnpress(num: Int) {
@@ -32,8 +33,10 @@ class MainActivity : AppCompatActivity() {
             '/' -> ansViewNum /= mainViewNum
         }
         oper = str
+        operView.text = "$oper"
         addView.text = "$ansViewNum"
         mainView.text = """0"""
+
     }
     fun btn0(view:View) {
         Btnpress(0)
